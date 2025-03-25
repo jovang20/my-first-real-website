@@ -5,11 +5,11 @@ body {
 
 .header {
     background-color: #191f2a;
-    padding: 0px 400px;
+    padding: 0px 10%;
     color: white;
 }
 
-h1, ul, a {
+.header h1, ul, a {
     display: flex;
     list-style: none;
     text-decoration: none;
@@ -52,6 +52,7 @@ a:visited { color: white}
     padding: 5px 35px;
     font-weight: bold;
     font-size: large;
+    margin-top: 10px;
 }
 
 .placeholder {
@@ -63,7 +64,116 @@ a:visited { color: white}
     font-size:x-large;
 }
 
+/* END OF HEADER */
 
+.boxes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    flex-basis: 100%;
+}
 
+.box {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: solid #4A90B2 5px;
+    flex-direction: column;
+    border-radius: 15px;
+}
 
+.description p {
+    display: flex;
+    width: 240px;
+    height: auto;
+    justify-content: center;
+    margin: 5px;
+    align-items: center;
+    text-align: center;
+}
 
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+/* QUOTE */
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 100px 0px;
+    background-color: #D3D3D3;
+    flex-direction: column;
+}
+
+.quote p {
+    display: flex;
+    padding: 0 25%;
+    line-height: 1.5;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    font-style: italic;
+    font-size: xx-large;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+p.signature {
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 0 25%;
+    justify-content: end;
+}
+/* SIGNUP */
+
+.signup {
+    display: flex;
+    padding: 40px;
+    background-color: #4A90B2;
+    align-items: center;
+    margin: 5%;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.signup-text {
+    color: white;
+    flex: 1;
+    margin-left: 100px;
+}
+
+.signup-text h1, p {
+    margin: 0;
+}
+
+.signup button {
+    background-color:#4A90B2;
+    border: solid white 3px;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: large;
+    margin-right: 100px;
+}
+/* FOOTER */
+
+.footer {
+    display: flex;
+    background-color: #191f2a;
+    justify-content: center;
+    padding: 40px 0;
+    color: white;
+}
